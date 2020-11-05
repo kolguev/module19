@@ -1,0 +1,18 @@
+import pytest
+from app.calculator import Calculator
+
+class TestCalc:
+    def setup(self):
+        self.calc=Calculator
+
+    def test_multiply_Calculator_correctly(self):
+        assert self.calc.multifly(self, 2, 2) == 4
+
+    def test_division_Calculator_correctly(self):
+        assert self.calc.division(self, 2, 2) == 1
+
+    def test_subtraction_Calculator_correctly(self):
+        assert self.calc.subtraction(self, 2, 2) == 0
+    
+    def test_adding_Calculator_correctly(self):
+        assert self.calc.adding(self, 2, 2) == 4
