@@ -6,7 +6,7 @@ class TestCalc:
         self.calc=Calculator
 
     def test_multiply_Calculator_correctly(self):
-        assert self.calc.multiply(self, 2, 3) == 4
+        assert self.calc.multiply(self, 2, 2) == 4
 
     def test_division_Calculator_correctly(self):
         assert self.calc.division(self, 2, 2) == 1
